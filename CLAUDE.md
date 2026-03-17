@@ -43,7 +43,7 @@ npm run build  # Production build → dist/
 - Owner: Petre Laskov, AI consultant, Skopje
 - Product: Custom AI agent environments (Meta-Architecture v7)
 - Tiers: Personal EUR 149 / Professional EUR 499 / Custom EUR 2k+
-- Proof case: MONIV International (manufacturing)
+- Proof case: anonymized manufacturing client
 - CTA: Cal.com discovery call + Formspree contact form
 
 ## Key Decisions

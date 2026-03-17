@@ -104,8 +104,8 @@ export const howItWorks = {
 
 export const caseStudy = {
   eyebrow: 'Case study',
-  headline: 'MONIV International',
-  subtitle: 'Manufacturing operations',
+  headline: 'A mid-size manufacturer',
+  subtitle: 'Production & supplier operations',
   quote:
     'The agent environment transformed how our team handles production scheduling, quality documentation, and supplier communications\u2009\u2014\u2009tasks that used to take hours now take minutes.',
   results: [
@@ -114,7 +114,7 @@ export const caseStudy = {
     { metric: 'Workflows automated', value: '8' },
   ],
   description:
-    'MONIV International needed to streamline operations across production scheduling, quality non-conformance tracking, and multi-language supplier communication. A custom multi-agent environment\u2009\u2014\u2009built in under a week\u2009\u2014\u2009gave their team persistent operational context and autonomous workflow execution.',
+    'A manufacturing company needed to streamline operations across production scheduling, quality non-conformance tracking, and multi-language supplier communication. A custom multi-agent environment\u2009\u2014\u2009built in under a week\u2009\u2014\u2009gave their team persistent operational context and autonomous workflow execution.',
 } as const;
 
 export const about = {
