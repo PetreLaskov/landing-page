@@ -51,6 +51,24 @@ section[id] {
   scroll-margin-top: 5rem;
 }
 
+/* Skip-to-content link — visible only on keyboard focus */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary-700);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.skip-to-content:focus {
+  left: 0;
+}
+
 /* Focus ring for accessibility — visible on keyboard nav, hidden on click */
 :focus-visible {
   outline: 2px solid var(--color-primary-500);

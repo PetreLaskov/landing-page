@@ -7,8 +7,9 @@ npm run build  # Production build → dist/
 ```
 
 ## Current State
-- **Phase**: 6 COMPLETE — FinalCta (Cal.com + Formspree form) + Footer
-- **Next**: Phase 7 — Hardening (a11y, perf, robots.txt, OG image)
+- **Phase**: 7 COMPLETE — robots.txt, sitemap, skip-to-content, a11y hardening, theme-color
+- **Next**: Phase 8 — Deploy (GitHub repo, Cloudflare Pages)
+- **OG image**: `public/og-image.png` still needed (1200x630, create externally)
 - **Last commit**: see `git log --oneline -1`
 
 ## Tech Stack
@@ -31,7 +32,7 @@ npm run build  # Production build → dist/
 4. ~~Middle Sections~~ DONE — Solution, HowItWorks, CaseStudy
 5. ~~Pricing + About + FAQ~~ DONE — 3 components, about copy data, 4 JSON-LD schemas injected
 6. ~~CTAs + Contact~~ DONE — FinalCta (Cal.com link-out + Formspree form), Footer, copy data
-7. Hardening — a11y, perf, robots.txt, OG image
+7. ~~Hardening~~ DONE — robots.txt, sitemap, skip-to-content, nav aria-labels, theme-color, honeypot a11y
 8. Deploy — GitHub repo, Cloudflare Pages
 9. Polish — final copy, favicon, legal
 10. Verify — all links, forms, Lighthouse 95+
