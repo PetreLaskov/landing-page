@@ -7,9 +7,9 @@ npm run build  # Production build → dist/
 ```
 
 ## Current State
-- **Phase**: 1 COMPLETE — scaffold built
-- **Next**: Phase 2 — data files (pricing.ts, faq.ts, schema.ts) + design system (global.css theme)
-- **Last commit**: (initial commit pending)
+- **Phase**: 2 COMPLETE — data files + design system
+- **Next**: Phase 3 — above the fold (Header, Hero, Problem)
+- **Last commit**: see `git log --oneline -1`
 
 ## Tech Stack
 - Astro 6.x (static site, zero client JS)
@@ -26,7 +26,7 @@ npm run build  # Production build → dist/
 
 ## Phase Plan
 1. ~~Scaffold~~ DONE
-2. Data + Design System — pricing.ts, faq.ts, schema.ts, Tailwind theme
+2. ~~Data + Design System~~ DONE — pricing.ts, faq.ts, schema.ts, Tailwind v4 theme
 3. Above the Fold — Header, Hero, Problem
 4. Middle Sections — Solution, HowItWorks, CaseStudy
 5. Pricing + About + FAQ — with JSON-LD schema
