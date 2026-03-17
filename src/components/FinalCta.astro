@@ -1,0 +1,100 @@
+---
+import { finalCta } from '../data/copy';
+---
+
+<section id="contact" class="bg-primary-900 px-6 py-16 sm:py-24">
+  <div class="mx-auto max-w-[--container-lg]">
+    <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+      <!-- Left: Cal.com CTA -->
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          {finalCta.headline}
+        </h2>
+        <p class="mt-4 text-lg text-primary-200">
+          {finalCta.description}
+        </p>
+        <a
+          href={finalCta.calCta.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent-500 px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-accent-600"
+        >
+          {finalCta.calCta.label}
+          <svg
+            class="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right: Formspree contact form -->
+      <div class="rounded-xl bg-white p-6 shadow-lg sm:p-8">
+        <h3 class="text-xl font-bold text-gray-900">{finalCta.formHeadline}</h3>
+        <p class="mt-1 text-sm text-gray-600">{finalCta.formDescription}</p>
+
+        <form
+          action={finalCta.formAction}
+          method="POST"
+          class="mt-6 space-y-5"
+        >
+          <!-- Honeypot: hidden from humans, catches spam bots -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              autocomplete="name"
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="email"
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">
+              How can I help?
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              required
+              class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 shadow-sm transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none resize-y"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full rounded-lg bg-primary-700 px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-primary-800"
+          >
+            Send message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

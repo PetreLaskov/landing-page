@@ -7,8 +7,8 @@ npm run build  # Production build → dist/
 ```
 
 ## Current State
-- **Phase**: 2 COMPLETE — data files + design system
-- **Next**: Phase 3 — above the fold (Header, Hero, Problem)
+- **Phase**: 6 COMPLETE — FinalCta (Cal.com + Formspree form) + Footer
+- **Next**: Phase 7 — Hardening (a11y, perf, robots.txt, OG image)
 - **Last commit**: see `git log --oneline -1`
 
 ## Tech Stack
@@ -21,16 +21,16 @@ npm run build  # Production build → dist/
 - `src/layouts/BaseLayout.astro` — HTML shell, meta tags, OG/Twitter cards, imports global.css
 - `src/pages/index.astro` — Single page, imports components (placeholder comments mark where each goes)
 - `src/components/` — One component per section (Header, Hero, Problem, Solution, etc.)
-- `src/data/` — Business content separated from markup (pricing tiers, FAQ, JSON-LD schema)
+- `src/data/` — Business content separated from markup (copy.ts for section text, pricing.ts, faq.ts, schema.ts)
 - `src/styles/global.css` — Tailwind v4 import + custom theme (Phase 2)
 
 ## Phase Plan
 1. ~~Scaffold~~ DONE
 2. ~~Data + Design System~~ DONE — pricing.ts, faq.ts, schema.ts, Tailwind v4 theme
-3. Above the Fold — Header, Hero, Problem
-4. Middle Sections — Solution, HowItWorks, CaseStudy
-5. Pricing + About + FAQ — with JSON-LD schema
-6. CTAs + Contact — Cal.com, Formspree, Footer
+3. ~~Above the Fold~~ DONE — Header, Hero, Problem + copy.ts data file
+4. ~~Middle Sections~~ DONE — Solution, HowItWorks, CaseStudy
+5. ~~Pricing + About + FAQ~~ DONE — 3 components, about copy data, 4 JSON-LD schemas injected
+6. ~~CTAs + Contact~~ DONE — FinalCta (Cal.com link-out + Formspree form), Footer, copy data
 7. Hardening — a11y, perf, robots.txt, OG image
 8. Deploy — GitHub repo, Cloudflare Pages
 9. Polish — final copy, favicon, legal

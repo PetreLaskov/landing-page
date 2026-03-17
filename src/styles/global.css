@@ -46,6 +46,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Offset anchor targets below sticky header */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 /* Focus ring for accessibility — visible on keyboard nav, hidden on click */
 :focus-visible {
   outline: 2px solid var(--color-primary-500);

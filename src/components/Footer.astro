@@ -1,0 +1,46 @@
+---
+import { footer } from '../data/copy';
+---
+
+<footer class="border-t border-gray-200 bg-white px-6 py-10">
+  <div class="mx-auto flex max-w-[--container-lg] flex-col items-center gap-6 sm:flex-row sm:justify-between">
+    <div class="text-center sm:text-left">
+      <p class="text-sm font-semibold text-primary-900">Petre Laskov</p>
+      <p class="mt-1 text-xs text-gray-500">
+        {footer.location} &middot;
+        <a
+          href={`mailto:${footer.email}`}
+          class="text-primary-600 transition-colors hover:text-primary-700"
+        >
+          {footer.email}
+        </a>
+        &middot;
+        <a
+          href={footer.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 transition-colors hover:text-primary-700"
+        >
+          LinkedIn
+        </a>
+      </p>
+    </div>
+
+    <nav aria-label="Footer">
+      <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        {footer.nav.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="text-sm text-gray-500 transition-colors hover:text-primary-700"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <p class="text-xs text-gray-400">{footer.copyright}</p>
+  </div>
+</footer>

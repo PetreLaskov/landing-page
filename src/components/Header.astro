@@ -1,0 +1,31 @@
+---
+import { header } from '../data/copy';
+---
+
+<header class="sticky top-0 z-50 border-b border-gray-200/80 bg-white/90 backdrop-blur-sm">
+  <nav class="mx-auto flex max-w-[--container-lg] items-center justify-between px-6 py-4">
+    <a href="/" class="text-lg font-semibold text-primary-900">
+      {header.logo}
+    </a>
+
+    <ul class="hidden items-center gap-8 md:flex">
+      {header.nav.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class="text-sm text-gray-600 transition-colors hover:text-primary-700"
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <a
+      href={header.cta.href}
+      class="rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-800"
+    >
+      {header.cta.label}
+    </a>
+  </nav>
+</header>

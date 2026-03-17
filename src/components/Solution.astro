@@ -1,0 +1,29 @@
+---
+import { solution } from '../data/copy';
+---
+
+<section id="solution" class="px-6 py-16 sm:py-24">
+  <div class="mx-auto max-w-[--container-lg]">
+    <p class="text-sm font-semibold uppercase tracking-wide text-primary-600">
+      {solution.eyebrow}
+    </p>
+    <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      {solution.headline}
+    </h2>
+
+    <div class="mt-6 max-w-3xl space-y-4">
+      {solution.paragraphs.map((p) => (
+        <p class="text-lg text-gray-600">{p}</p>
+      ))}
+    </div>
+
+    <div class="mt-12 grid gap-8 sm:grid-cols-3">
+      {solution.benefits.map((benefit) => (
+        <div class="rounded-xl border border-primary-100 bg-primary-50 p-6">
+          <h3 class="text-lg font-semibold text-gray-900">{benefit.title}</h3>
+          <p class="mt-2 text-gray-600">{benefit.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
