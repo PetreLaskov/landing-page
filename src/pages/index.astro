@@ -27,7 +27,6 @@ const description =
 const schemas = [
   organizationSchema(),
   personSchema(),
-  serviceSchema(pricingTiers),
   faqPageSchema(faqItems),
 ];
 ---
@@ -45,7 +44,7 @@ const schemas = [
     <Solution />
     <HowItWorks />
     <CaseStudy />
-    <Pricing />
+    <!-- Pricing section removed — not public yet -->
     <About />
     <FAQ />
     <FinalCta />

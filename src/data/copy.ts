@@ -4,7 +4,6 @@ export const header = {
     { label: 'Problem', href: '#problem' },
     { label: 'Solution', href: '#solution' },
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Pricing', href: '#pricing' },
     { label: 'FAQ', href: '#faq' },
   ],
   cta: { label: 'Book a call', href: '#contact' },
@@ -15,7 +14,7 @@ export const hero = {
   subheadline:
     'Custom agent environments built around your workflows, your data, your rules. Not another chatbot\u2009\u2014\u2009an operational partner.',
   primaryCta: { label: 'Book a discovery call', href: '#contact' },
-  secondaryCta: { label: 'See pricing', href: '#pricing' },
+  secondaryCta: { label: 'See how it works', href: '#how-it-works' },
   proof: 'From discovery call to working system in days, not months.',
 } as const;
 
@@ -163,7 +162,6 @@ export const footer = {
   linkedin: 'https://www.linkedin.com/in/petrelaskov/',
   nav: [
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Pricing', href: '#pricing' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Contact', href: '#contact' },
   ],
