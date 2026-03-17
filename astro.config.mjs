@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://petrelaskov.com',
+  site: 'https://landing-page-6qh.pages.dev', // TODO: change to custom domain when ready
   vite: {
     plugins: [tailwindcss()],
   },

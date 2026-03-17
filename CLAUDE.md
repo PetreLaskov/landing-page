@@ -7,8 +7,9 @@ npm run build  # Production build → dist/
 ```
 
 ## Current State
-- **Phase**: 8 COMPLETE — GitHub repo created, pushed to PetreLaskov/landing-page
+- **Phase**: 8 COMPLETE — deployed to Cloudflare Pages
 - **Next**: Phase 9 — Polish (final copy, favicon, legal)
+- **Live**: https://landing-page-6qh.pages.dev
 - **Repo**: https://github.com/PetreLaskov/landing-page
 - **OG image**: `public/og-image.png` (1200x630, brand colors)
 - **Last commit**: see `git log --oneline -1`
@@ -17,7 +18,7 @@ npm run build  # Production build → dist/
 - Astro 6.x (static site, zero client JS)
 - Tailwind CSS v4.2 (CSS-first config via `@tailwindcss/vite`)
 - @astrojs/sitemap (auto-generates sitemap on build)
-- Cloudflare Pages (deployment target — connect via dashboard)
+- Cloudflare Pages (auto-deploy from main branch)
 
 ## Architecture
 - `src/layouts/BaseLayout.astro` — HTML shell, meta tags, OG/Twitter cards, imports global.css
@@ -34,7 +35,7 @@ npm run build  # Production build → dist/
 5. ~~Pricing + About + FAQ~~ DONE — 3 components, about copy data, 4 JSON-LD schemas injected
 6. ~~CTAs + Contact~~ DONE — FinalCta (Cal.com link-out + Formspree form), Footer, copy data
 7. ~~Hardening~~ DONE — robots.txt, sitemap, skip-to-content, nav aria-labels, theme-color, honeypot a11y
-8. ~~Deploy~~ DONE — GitHub repo + push, Cloudflare Pages pending dashboard setup
+8. ~~Deploy~~ DONE — GitHub repo, Cloudflare Pages live at landing-page-6qh.pages.dev
 9. Polish — final copy, favicon, legal
 10. Verify — all links, forms, Lighthouse 95+
 
