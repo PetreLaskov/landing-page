@@ -7,41 +7,41 @@ export const faqItems: readonly FAQItem[] = [
   {
     question: 'What is an AI agent environment?',
     answer:
-      'It\u2019s a configured system where AI agents work alongside you \u2014 not a chatbot you talk to, but an operational partner that reads your files, follows your processes, and produces real output. Think of it as a new team member that already knows your workflows on day one.',
+      'A configured system where AI works alongside you \u2014 not a chatbot you prompt, but an operational partner that reads your files, follows your processes, and maintains context across sessions. Think of the difference between a search engine and a colleague who already knows your business.',
   },
   {
-    question: 'How is this different from ChatGPT or off-the-shelf AI tools?',
+    question: 'How is this different from ChatGPT or Copilot?',
     answer:
-      'General AI tools are generic by design. An agent environment is built around your specific workflows, data, and business rules. The difference is like hiring a generalist vs. training a specialist \u2014 the specialist produces better work faster because they understand your context.',
+      'Generic tools are generic by design. An agent environment is built from your actual documents, processes, and standards. ChatGPT doesn\u2019t know that your supplier in Shanghai formats invoices differently from your supplier in Istanbul. An agent environment does, because it was initialized on that data.',
   },
   {
     question: 'What does the build process look like?',
     answer:
-      'We start with a 15-minute discovery call to understand your workflows. Then I build the environment in focused sessions, showing you each piece as it comes together. You\u2019re involved throughout \u2014 this isn\u2019t a black box. By the end, you understand what was built and can extend it yourself.',
+      'We start with a 30-minute discovery call to map your workflows. Then I build the environment in focused sessions, showing you each piece as it\u2019s created. You\u2019re involved throughout \u2014 this isn\u2019t a black box. By the end, you understand what was built, why each decision was made, and how to extend it yourself.',
   },
   {
     question: 'How long until I have a working system?',
     answer:
-      'Personal environments are typically delivered in 1\u20132 days. Professional setups take 1\u20132 weeks across multiple sessions. Custom enterprise work varies, but we scope it clearly upfront \u2014 no open-ended engagements.',
+      'Most environments are operational within days. The manufacturing system I built was running on real operations after three sessions. Timeline depends on complexity, but I scope it clearly upfront \u2014 no open-ended engagements.',
   },
   {
     question: 'Do I need technical knowledge?',
     answer:
-      'No. The environment runs on your machine and I handle all the technical setup. You\u2019ll learn the methodology during the build \u2014 part of the value is understanding what the system does and why, so you\u2019re never dependent on me.',
+      'No. The environment runs on your machine and I handle setup. You learn the methodology during the build \u2014 that\u2019s part of the value. Clients with zero technical background operate these systems daily.',
   },
   {
     question: 'What happens after the build is done?',
     answer:
-      'You own everything. The environment lives on your machine, the methodology is documented, and you have support access for questions. Many clients start with Personal and upgrade to Professional once they see the impact.',
+      'You own everything. The environment lives on your machines, the methodology is documented, and you have support access for questions. When your business changes, evolution sessions are available to update the system.',
   },
   {
     question: 'What industries does this work for?',
     answer:
-      'Any knowledge work that involves research, writing, analysis, or process execution. Current clients span manufacturing operations, consulting, content creation, and software development. The methodology adapts to the domain \u2014 that\u2019s its core strength.',
+      'Any business that runs on documents, processes, and operational knowledge. Current work spans manufacturing operations, procurement, invoicing, and knowledge work. The methodology adapts to the domain \u2014 that\u2019s its core design principle.',
   },
   {
-    question: 'Can I try it before committing?',
+    question: 'What if an agent environment isn\u2019t right for my situation?',
     answer:
-      'The 15-minute discovery call is free and has no obligation. I\u2019ll tell you honestly whether an agent environment makes sense for your situation. If it doesn\u2019t, I\u2019ll say so \u2014 there\u2019s no point building something that won\u2019t deliver value.',
+      'I\u2019ll tell you on the discovery call. No charge, no obligation. Most AI problems are actually process problems or data problems. If yours is one of those, I\u2019ll say so and point you in the right direction. There\u2019s no point building infrastructure for a problem that has a simpler solution.',
   },
 ] as const;

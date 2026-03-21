@@ -12,11 +12,13 @@ import { caseStudy } from '../data/copy';
     </h2>
     <p class="mt-1 text-lg text-gray-500">{caseStudy.subtitle}</p>
 
-    <div class="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-8">
-      <blockquote class="text-lg italic text-gray-700">
-        &ldquo;{caseStudy.quote}&rdquo;
-      </blockquote>
-    </div>
+    {caseStudy.quote && (
+      <div class="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-8">
+        <blockquote class="text-lg italic text-gray-700">
+          &ldquo;{caseStudy.quote}&rdquo;
+        </blockquote>
+      </div>
+    )}
 
     <div class="mt-10 grid gap-6 sm:grid-cols-3">
       {caseStudy.results.map((result) => (
