@@ -9,12 +9,20 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "node --import tsx --test tests/landing.test.ts",
+    "test:lighthouse": "lhci autorun",
+    "verify": "npm run build && npm run test"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.1",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^6.0.5",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "cheerio": "^1.2.0",
+    "tsx": "^4.21.0"
   }
 }

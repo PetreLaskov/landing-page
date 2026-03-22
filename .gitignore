@@ -22,3 +22,13 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Playwright
+test-results/
+playwright-report/
+
+# Lighthouse CI
+.lighthouseci/
+
+# Visual regression screenshots (regenerated on each run)
+tests/screenshots/*.png
